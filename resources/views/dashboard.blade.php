@@ -153,7 +153,7 @@
 @section('content')
 <div class="dashboard-heading">
     <div>
-        <span class="eyebrow">Area akademik</span>
+        <span class="eyebrow">Area Bertumbuh</span>
         <h1>Dashboard</h1>
         <p>Ringkasan aktivitas kuliahmu.</p>
     </div>
@@ -199,7 +199,11 @@
         </aside>
     @else
         <aside class="focus-empty">
-            Belum ada tugas bertenggat. Catat tugasmu agar mudah menentukan fokus.
+            @if ((int) $summary->total === 0)
+                Belum ada tugas. Tambahkan tugas pertamamu untuk mulai menyusun jadwal belajar.
+            @else
+                Belum ada tenggat aktif. Tambahkan atau atur tenggat tugas agar lebih mudah menentukan fokus.
+            @endif
             <a href="{{ route('tasks.create') }}">＋ Tambah tugas</a>
         </aside>
     @endif
@@ -305,17 +309,17 @@
         <nav class="quick-links">
             <a class="quick-link" href="{{ route('tasks.index') }}">
                 <span class="quick-link-icon">▤</span>
-                <span><span class="quick-link-text">Daftar tugas</span><span class="quick-link-sub">{{ $summary->total }} tugas · {{ $courseCount }} mata kuliah</span></span>
+                <span><span class="quick-link-text">Daftar tugas</span><span class="quick-link-sub"></span></span>
                 <span class="quick-arrow">→</span>
             </a>
             <a class="quick-link" href="{{ route('tasks.create') }}">
                 <span class="quick-link-icon">＋</span>
-                <span><span class="quick-link-text">Tambah tugas</span><span class="quick-link-sub">Catat pekerjaan baru</span></span>
+                <span><span class="quick-link-text">Tambah tugas</span><span class="quick-link-sub"></span></span>
                 <span class="quick-arrow">→</span>
             </a>
             <a class="quick-link" href="{{ route('quizzes.index') }}">
                 <span class="quick-link-icon">✎</span>
-                <span><span class="quick-link-text">Latihan soal</span><span class="quick-link-sub">Asah pemahaman materi</span></span>
+                <span><span class="quick-link-text">Latihan soal</span><span class="quick-link-sub"></span></span>
                 <span class="quick-arrow">→</span>
             </a>
         </nav>

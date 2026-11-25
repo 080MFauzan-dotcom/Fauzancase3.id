@@ -49,7 +49,7 @@
     <div>
         <span class="eyebrow">Akun Belajar</span>
         <h1>Profil saya</h1>
-        <p>Lengkapi identitas akademik dan minatmu dalam satu tempat.</p>
+        <p>Isi data diri mu kawan.</p>
     </div>
     <a class="date-chip" href="{{ route('dashboard') }}">← Kembali ke dashboard</a>
 </div>

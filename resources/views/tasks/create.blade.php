@@ -54,7 +54,7 @@
             <div>
                 <span class="eyebrow">Catat pekerjaan</span>
                 <h2>Informasi tugas</h2>
-                <p>Isi informasi utama. Kamu bisa memperbaruinya kapan saja.</p>
+                <p>Bisa diperbarui kapan saja.</p>
             </div>
             <span class="quick-mark" aria-hidden="true">＋</span>
         </div>
@@ -118,12 +118,11 @@
     </section>
 
     <aside class="panel tip-panel">
-        <span class="eyebrow">Tips produktif</span>
+        <span class="eyebrow">Tips produktif dari gua</span>
         <h3>Rencanakan dengan ringan.</h3>
-        <p>Mencatat tugas membantu pikiran lebih lega. Mulai dari informasi yang paling penting.</p>
         <div class="tip-item"><span class="tip-check">1</span><span>Gunakan nama tugas yang jelas supaya mudah dicari.</span></div>
         <div class="tip-item"><span class="tip-check">2</span><span>Tambahkan tanggal tenggat untuk melihatnya di dashboard.</span></div>
         <div class="tip-item"><span class="tip-check">3</span><span>Pilih prioritas yang realistis, lalu kerjakan satu per satu.</span></div>
-    </aside>
+         <div class="tip-item"><span class="tip-check">4</span><span>Hidup yang tidak dipertaruhkan, tidak akan pernah dimenangkan</span>
 </div>
 @endsection
